@@ -48,12 +48,7 @@ var view = {
         app.ticker.add(function() { //постоянное обновление холста
             for (var i = 0; i < model.figuresAmount; i++) {
                 figure[i].position.y += gravity; //заставляем гравитацию работать
-                if (figure[i].position.y > height && figure[i].live == true) {
-                    model.gameOver();
-                    return false;
             }
-
-        }
     });
     }
 };
