@@ -45,7 +45,7 @@ var model = {
         gameOverText.pivot.y = 50;
         app.stage.addChild(gameOverText);
     }
-}
+};
 var view = {
     loadGame: function() {
         model.createCanvas();
@@ -64,7 +64,7 @@ var view = {
             }
         });
     }
-}
+};
 
 
 var controller = {
@@ -73,6 +73,6 @@ var controller = {
         figure[this.num].live = false;
 
     }
-}
+};
 
 view.loadGame();
